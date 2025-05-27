@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="bookings.css">
+</head>
+<body>
+  <h2>Book This Property</h2>
+  <form action="http://localhost:3000/bookings" method="POST">
+    <input type="hidden" id="listing_id" name="listing_id" value="">
+    <label for="start_date">Start Date:</label>
+    <input type="date" id="start_date" name="start_date" required><br><br>
+
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date" required><br><br>
+
+    <label for="client_name">Name:</label>
+    <input type="text" id="client_name" name="client_name" required><br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="daytime_phone">Daytime Phone:</label>
+    <input type="tel" id="daytime_phone" name="daytime_phone"><br><br>
+
+    <label for="mobile_phone">Mobile Number:</label>
+    <input type="tel" id="mobile_phone" name="mobile_phone"><br><br>
+
+    <label for="postal_address">Postal Address:</label>
+    <input type="text" id="postal_address" name="postal_address"><br><br>
+
+    <label for="home_address">Home Address:</label>
+    <input type="text" id="home_address" name="home_address"><br><br>
+
+    <button type="submit">Book Now</button>
+  </form>
+
+  <script>
+    // Set the listing_id from the URL query parameter
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('listing_id').value = params.get('listing_id') || '';
+  </script>
+</body>
+</html>

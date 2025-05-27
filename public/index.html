@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset = "UTF-8">
+<link rel = "stylesheet" href="index.css">
+<title> My Form </title>
+</head>
+<body>
+<header>
+<h1>A Database</h1>
+</header>
+<form action="/item" method="POST">
+<!-- Add this inside your <form> ... </form> -->
+<fieldset>
+  <h3>Find a Property</h3>
+  <label>Location (required):</label>
+  <input type="text" id="location" name="location" required>
+  <br><br>
+  <label>Property Type:</label>
+  <select id="property_type" name="property_type">
+    <option value="">Any</option>
+    <option value="Condominium">Condominium</option>
+    <option value="House">House</option>
+    <option value="Apartment">Apartment</option>
+    <!-- Add more as needed -->
+  </select>
+  <br><br>
+  <label>Bedrooms:</label>
+  <select id="bedrooms" name="bedrooms">
+    <option value="">Any</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <!-- Add more as needed -->
+  </select>
+  <br><br>
+  <button type="reset">Reset</button>
+  <button type="submit">Submit</button>
+</fieldset>
+</form>
+</body>
+</html>
