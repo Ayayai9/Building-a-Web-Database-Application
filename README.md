@@ -1,14 +1,17 @@
-README
+## Port Number
 
-# Property Listings & Booking Application
+- The application runs on **port 3000**.
 
-## How to Run
+## Required Libraries
 
-1. **Install dependencies**  
-   In the project directory, run:
+- express
+- mongodb
+- body-parser
 
-2. **Start the server**  
-   In the `/root/database/final/public` directory, run:
+(Install with `npm install express mongodb body-parser`)
 
-3. **Access the application**  
-   Open your browser and go to:
+## Notes
+
+- Ensure your MongoDB Atlas connection string in `server.js` is valid and accessible.
+- All static files (`index.html`, `bookings.html`, CSS) should be in the same directory as `server.js`.
+- The server must be running for all booking and search features to work.
