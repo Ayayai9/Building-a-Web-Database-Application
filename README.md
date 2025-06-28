@@ -13,7 +13,7 @@
    In the `/root/database/final/public` directory, run:
 
    ```
-   node server.js
+   node public/server.js
    ```
 
 3. **Access the application**  
