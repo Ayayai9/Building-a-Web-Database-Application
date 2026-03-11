@@ -40,5 +40,3 @@
 - All static files (`index.html`, `bookings.html`, CSS) should be in the same directory as `server.js`.
 - The server must be running for all booking and search features to work.
 - If you encounter a "site can't be reached" error, make sure the server is running and you are using the correct port.
-
-t
